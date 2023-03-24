@@ -2,7 +2,6 @@
 
 // http://www.omdbapi.com/?i=tt3896198&apikey=bdf3a323
 
-(function () {
   const movieTitle = document.getElementById("movie-title");
   const year = document.getElementById("released-year");
   const runtime = document.getElementById("runtime");
@@ -49,7 +48,6 @@
   }
 
   fetchMovie();
-})();
 
 // Formatting number into 'K'
 
