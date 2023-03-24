@@ -76,6 +76,7 @@ form button {
 
 #suggested-movie-container .movie-card:hover {
   transform: scale(1.1);
+  box-shadow: 0px 0px 10px 0px black;
 }
 
 .movie-card img {

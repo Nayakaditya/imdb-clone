@@ -54,7 +54,7 @@
       }
     });
 
-    if (!isInArray && data.Title != undefined) {
+    if (!isInArray) {
       console.log(data);
       suggestedMovieList.push(data);
 
