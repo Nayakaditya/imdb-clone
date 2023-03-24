@@ -1,0 +1,200 @@
+:root {
+  --nav-color: #1b1b1b;
+  --btn-color: #ffbe46;
+  --btn-color2: #ff9823;
+  --main-color: rgb(43, 43, 43);
+  --main-font: white;
+  --seconday-font: #cacaca;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  /* font-family: sans-serif; */
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  color: white;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.nav {
+  width: 100%;
+  background-color: var(--nav-color);
+  padding: 0.5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: fixed;
+  top: 0;
+}
+
+.back-link {
+  margin-left: 40px;
+}
+
+.nav button {
+  text-decoration: none;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+  background-color: var(--btn-color);
+  cursor: pointer;
+  transition: all 120ms linear;
+}
+
+.nav button:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 1px 2px white;
+  background-color: #1b1b1b;
+}
+
+.nav button,
+.nav button::before {
+  color: #1b1b1b;
+}
+.nav button:hover,
+.nav button:hover::before {
+  color: #ffbe46;
+}
+
+.nav button::before {
+  content: "\f060";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  /* margin-right: 5px; */
+}
+
+/* ++++++++ MOVIE CONTAINER ++++++++++ */
+
+section {
+  background-color: var(--main-color);
+  /* background: repeating-linear-gradient(var(--main-color) 1%, rgb(19, 19, 19) 2%); */
+  margin: 60px 0;
+  padding: 4rem 5rem;
+}
+.movie-info-container {
+  display: block;
+}
+
+/* inside movie-info-container two div top-container and bottom-container */
+
+.movie-info-container > div {
+  width: 100%;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+/* top container */
+.top-container {
+  height: auto;
+}
+
+.top-container .top-left {
+  width: 90%;
+  height: auto;
+}
+
+.top-container .top-left header h1 {
+  color: var(--main-font);
+  font-size: 3em;
+  line-height: 3.125rem;
+  margin: 0;
+  font-weight: 500;
+}
+
+.top-left .year_and_runtime,
+.top-container .top-right {
+  font-weight: 300;
+  font-size: 0.9em;
+  color: var(--seconday-font);
+}
+
+.top-left .year_and_runtime {
+  margin-top: 10px;
+}
+
+.top-container .top-right {
+  width: 110px;
+  height: auto;
+}
+
+.rating-vote {
+  margin-top: -10px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.rating-vote:hover {
+  background-color: #0000001a;
+}
+
+.top-container .top-right .rating-vote #rating {
+  color: var(--main-font);
+  font-size: 1.3em;
+}
+
+/* bottom container */
+.bottom-container {
+  height: auto;
+  /* background-color: red; */
+}
+
+.bottom-container .bottom-left {
+  width: 350px;
+}
+
+.movie-info-container .movie-container .left {
+  width: 300px;
+}
+
+.movie-info-container .movie-container .left img {
+  width: 100%;
+  height: 100%;
+}
+
+.bottom-container .bottom-right {
+  margin-left: 20px;
+}
+
+.bottom-container .bottom-right .plot-container h4 {
+  color: var(--seconday-font);
+}
+
+.bottom-container .bottom-right .plot-container p {
+  word-spacing: 2px;
+  line-height: 1.6rem;
+}
+
+.bottom-right .genre-container {
+  width: max-content;
+  padding: 0.5rem 1em;
+  color: var(--seconday-font);
+  background-color: #0000001a;
+  border-radius: 10px;
+}
+
+.bottom-container .bottom-right .dws {
+  margin-top: 30px;
+}
+
+.bottom-container .bottom-right .dws .right-bottom-leads {
+  margin-bottom: 20px;
+}
+
+.bottom-container .bottom-right .dws .right-bottom-leads > span {
+  color: white;
+}
+
+.bottom-container .bottom-right .dws .right-bottom-leads .text-bluish {
+  color: rgb(0, 119, 255);
+}

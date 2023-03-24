@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search - IMDb Clone</title>
+    <link
+      rel="shortcut icon"
+      href="./assets/img/favicon.png"
+      type="image/x-icon"
+    />
+
+    <!-- BOOTSTRAP CSS LINK -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+
+    <!-- MY CSS FILE LINK -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+
+    <nav class="navbar navbar-expand-lg px-5 bg-dark sticky-top">
+      <div class="container-fluid justify-content-start">
+        <a class="navbar-brand" href="/index.html">
+          <img width="40" src="./assets/img/favicon.png" alt="" />
+        </a>
+
+        <div id="search-bar" class="mx-auto">
+          <form>
+            <input
+              type="search"
+              id="search"
+              placeholder="Search Your Movie by Title"
+            />
+            <button id="search-btn">
+              <i class="fa-solid fa-magnifying-glass search-icon"></i>
+            </button>
+          </form>
+        </div>
+
+        <button id="reload-btn" title="Reload the page">
+          <i class="fa-solid fa-rotate-right"></i>
+        </button>
+      </div>
+    </nav>
+
+    <!-- MAIN -->
+    <div id="grand-parent" class="d-grid bg-primary">
+      <!-- suggested movie container -->
+      <main id="main-container" class="bg-danger">
+        <div id="suggested-movie-container">
+          <!-- <div class="movie-card" data-id="RRR">
+            <a href="./movieInfo.html" data-id="RRR">
+              <img
+                width="200"
+                src="https://m.media-amazon.com/images/M/MV5BODUwNDNjYzctODUxNy00ZTA2LWIyYTEtMDc5Y2E5ZjBmNTMzXkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_SX300.jpg"
+                alt="movie-poster"
+                data-id="RRR"
+              />
+              <div class="movie-text d-flex justify-content-center mt-3">
+                <div class="movie-link mb-3">
+                  <a href="./movieInfo.html" data-id="RRR">RRR</a>
+                </div>
+                <button>
+                  <i class="fa-solid fa-heart"></i>
+                </button>
+              </div>
+            </a>
+          </div> -->
+        </div>
+      </main>
+      <!-- favourite movie container -->
+      <section id="favMovieListContainer" class="bg-dark-fav">
+        <h2 class="text-center text-white">Favourites</h2>
+        <div id="fav-list" class="my-5">
+          <!-- <div
+            class="single-fav-movie-card d-flex my-3 justify-content-between align-content-center"
+          >
+            <img
+              src="https://m.media-amazon.com/images/M/MV5BODUwNDNjYzctODUxNy00ZTA2LWIyYTEtMDc5Y2E5ZjBmNTMzXkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_SX300.jpg"
+              alt="movie-poster"
+            />
+
+            <div class="movie-name-container">
+              <p class="movie-name">RRRrrr</p>
+            </div>
+
+            <div class="del-btn-icon">
+              <i class="fa-solid fa-trash del-fav-btn"></i>
+            </div>
+          </div> -->
+        </div>
+      </section>
+    </div>
+    <!-- BOOTSTRAP JS LINK -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- FONT AWESOME JS LINK -->
+    <script
+      src="https://kit.fontawesome.com/4bfb5306a3.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- MY SCRIPT LINK -->
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>

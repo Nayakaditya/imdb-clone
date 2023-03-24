@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title id="movie-title">Movies</title>
+    <link rel="stylesheet" href="../assets/css/movie.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="shortcut icon"
+      href="../assets/img/favicon.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <div class="nav">
+      <p class="back-link">
+        <button
+          type="button"
+          onclick="window.history.back()"
+          title="go back to the previous page"
+        >
+          Back
+        </button>
+        <!-- <a href="./movieInfo.html">Back</a> -->
+      </p>
+    </div>
+
+    <!-- MOVIE CONTAINER -->
+    <section>
+      <div class="movie-info-container">
+        <div class="top-container d-flex justify-content-between">
+          <div class="left top-left">
+            <header>
+              <h1 id="title">N/A</h1>
+            </header>
+            <div class="year_and_runtime">
+              <span>
+                <span>Y . </span>
+                <span id="released-year"></span>
+                &nbsp;
+                <span>R . </span>
+                <span id="runtime"></span>
+              </span>
+            </div>
+          </div>
+          <div class="right top-right">
+            <div class="rating-text">
+              <p>IMDb RATING</p>
+            </div>
+            <div class="rating-vote">
+              <span>
+                <img
+                  width="20"
+                  src="https://cdn-icons-png.flaticon.com/512/2107/2107957.png"
+                  alt="rate-star"
+                />
+              </span>
+              <span id="rating"></span>
+              <span>/10</span>
+              <p
+                id="totalvote"
+                style="
+                  margin: 5px 0;
+                  text-align: center;
+                  font-size: 0.9em;
+                  font-weight: 300;
+                "
+              ></p>
+            </div>
+            <div></div>
+          </div>
+        </div>
+
+        <!-- bottom container -->
+        <div class="bottom-container d-flex">
+          <div class="left bottom-left">
+            <img id="poster" alt="movie-poster" />
+          </div>
+          <div class="right bottom-right">
+            <div class="plot-container">
+              <h4>Plot</h4>
+              <p id="plot"></p>
+            </div>
+
+            <div class="genre-container">
+              <span id="genre">Action, Drama, Emotional</span>
+            </div>
+
+            <div class="dws">
+              <div class="right-bottom-leads">
+                <span>Director</span>&nbsp;
+                <span id="director" class="text-bluish"></span>
+              </div>
+              <div class="right-bottom-leads">
+                <span>Writers</span>&nbsp;
+                <span id="writer" class="text-bluish"></span>
+              </div>
+              <div class="right-bottom-leads">
+                <span>Stars</span>&nbsp;
+                <span id="stars" class="text-bluish"></span>
+              </div>
+              <div class="right-bottom-leads" style="margin-top: 40px">
+                <span>Awards</span>&nbsp;
+                <span id="awards" style="color: goldenrod"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script
+      src="https://kit.fontawesome.com/4bfb5306a3.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../assets/js/movieInfo.js"></script>
+  </body>
+</html>
