@@ -24,11 +24,15 @@
   </head>
   <body>
     <!-- NAVBAR -->
-
     <nav class="navbar navbar-expand-lg px-5 bg-dark sticky-top">
       <div class="container-fluid justify-content-start">
         <a class="navbar-brand" href="/index.html">
-          <img width="40" src="./assets/img/favicon.png" alt="" />
+          <img
+            width="40"
+            style="border-radius: 10px"
+            src="./assets/img/favicon.png"
+            alt=""
+          />
         </a>
 
         <div id="search-bar" class="mx-auto">
@@ -49,55 +53,23 @@
         </button>
       </div>
     </nav>
-
     <!-- MAIN -->
     <div id="grand-parent" class="d-grid bg-primary">
       <!-- suggested movie container -->
       <main id="main-container" class="bg-danger">
         <div id="suggested-movie-container">
-          <!-- <div class="movie-card" data-id="RRR">
-            <a href="./movieInfo.html" data-id="RRR">
-              <img
-                width="200"
-                src="https://m.media-amazon.com/images/M/MV5BODUwNDNjYzctODUxNy00ZTA2LWIyYTEtMDc5Y2E5ZjBmNTMzXkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_SX300.jpg"
-                alt="movie-poster"
-                data-id="RRR"
-              />
-              <div class="movie-text d-flex justify-content-center mt-3">
-                <div class="movie-link mb-3">
-                  <a href="./movieInfo.html" data-id="RRR">RRR</a>
-                </div>
-                <button>
-                  <i class="fa-solid fa-heart"></i>
-                </button>
-              </div>
-            </a>
-          </div> -->
+          <!-- ADD DYNAMIC SEARCHED MOVIE CARD HERE -->
         </div>
       </main>
       <!-- favourite movie container -->
       <section id="favMovieListContainer" class="bg-dark-fav">
         <h2 class="text-center text-white">Favourites</h2>
         <div id="fav-list" class="my-5">
-          <!-- <div
-            class="single-fav-movie-card d-flex my-3 justify-content-between align-content-center"
-          >
-            <img
-              src="https://m.media-amazon.com/images/M/MV5BODUwNDNjYzctODUxNy00ZTA2LWIyYTEtMDc5Y2E5ZjBmNTMzXkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_SX300.jpg"
-              alt="movie-poster"
-            />
-
-            <div class="movie-name-container">
-              <p class="movie-name">RRRrrr</p>
-            </div>
-
-            <div class="del-btn-icon">
-              <i class="fa-solid fa-trash del-fav-btn"></i>
-            </div>
-          </div> -->
+          <!-- ADD DYNAMIC FAV MOVIE CARD HERE -->
         </div>
       </section>
     </div>
+
     <!-- BOOTSTRAP JS LINK -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
